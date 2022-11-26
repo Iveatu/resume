@@ -6,78 +6,189 @@
   </head>
 
 <body>
+  <section><!--this section takes care of hyoerlink on top of page. when clicked, it will put to the line code that has the "id" attribute-->
+    <!--you can also use <nav> instead of sectio. <nav> <ul><li> <a href="#skills">Skills</a></li>...</ul></nav> -->
+<a href="#name">Name</a>
+<a href="#address">Mailing Address</a>
+<a href="#history">Work History</a>
+<a href="#About Me">About Me</a>
+<a href="#Skills">Skills</a>
+<a href="#Portfolio">Portfolio</a>
+<a href="#Testimonials">Testimonials</a>
+<a href="#Services">Services</a>
+  </section>
+
+  <nav>
+    <ul>
+      <li><a href="#name">Name</a></li>
+      <li><a href="#address">Mailing Address</a></li>
+      <li><a href="#history">Work History</a></li>
+      <li><a href="#About Me">About Me</a></li>
+      <li><a href="#Skills">Skills</a></li>
+      <li><a href="#Portfolio">Portfolio</a></li>
+      <li><a href="#Testimonials">Testimonials</a></li>
+      <li><a href="#Services">Services</a></li>
+
+     </ul>
+   </nav>
+
+
+  <a href="#name">Name</a>
+  <a href="#address">Mailing Address</a>
+  <a href="#history">Work History</a>
+  <a href="#About Me">About Me</a>
+  <a href="#Skills">Skills</a>
+  <a href="#Portfolio">Portfolio</a>
+  <a href="#Testimonials">Testimonials</a>
+  <a href="#Services">Services</a>
+
+  <main>
     <h1>Resume</h1>
-    <section>
+    <section id="Name">
     <h2>Iveatu Obioha</h2>
-    Coder, Hardware Tech, and Instructor
-    Website: google.com
-    Phone: 111-222-3334
-    Twitter: @me
+   <p><h3>Coder, Hardware Tech, and Instructor</h3></p>
+    <dt>Website:</dt> 
+    <!--the target= "_blank"-->
+      <dd><a href="https://www.google.com" target="_blank"> Goggle </a></dd>
+    <!--to make a copy of any line code, highlight the code, press SHIFT +ALT+Down arrow-->
+    <dt>Phone:</dt> 
+    <dd>111-222-3334</dd>
+    <dt><a href="https://twitter.com" target="_blank">Twitter handle</a></dt> 
+    <dd>@me</dd>
+    <dt><a href="https://youtube.com">My Youtube Channel</a></dt> 
+    <dd>@iveatu</dd>
     </section>
 
     <article>
         <header>
-            <h2>About Me</h2>
+            <h2 id="About Me">About Me</h2>
         </header>
       Hello! I'm Iveatu and i'm happy to have you as a student in this course.
       <aside>
-        whether you think you can or you think you cant, you are right
+        <blockquote><small>"Whether you think you can or you think you cant, you are right"</small>
+        </blockquote>
       </aside>
     </article>
-    <footer>Authored by Iveatu</footer>
+    <footer><h5>Authored by Iveatu</h5></footer>
     
-   <section> 
+   <section id="Services"> 
         <h2>Services</h2>
-        Web development
-        App development
-        Training
+        <ul><li>Web development</li></ul>
+        <ul><li> App development</li></ul>
+        <ul><li>Training</li></ul>
+  
     </section>
 
-    <section>
+    <section id="Skills">
         <h2>Skills</h2>
-        HTML
-        Markup your content with semantic HTML
-        CSS
-        Layout your content visually for multiple devices
-        Javascript
-        Make you content more interactive, and build web applications
-    </section>
-
-    <section>
-        <h2>Work History</h2>
-        Backend Developer
-        ABC Corp
-        5 Years
+        <!--use p*3 tab to create multiple element (this case is paragraph)-->
+        <ul>
+          <li>
+            <p><strong>HTML:</strong> Markup your content with semantic
+            </p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p><strong>CSS:</strong> Layout your content visually for multiple device Javascript
+            </p>
+          </li>
+         </ul>
+       
+        <ul>
+          <li>
+            <p><strong>Javascript:</strong> Make you content more interactive, and build web applications </p>
+          </li>
+        </ul>
         
-        Hardware Designer
-        ACME
-        3 Years
-        
-        Construction Worker
-        123 Inc
-        2 Years
     </section>
 
-    <section>
+    <section id="history"> <!--the id is a global attribute. it can be used in any tag-->
         <h2>Work History</h2>
-        Backend Developer
-        ABC Corp
-        5 Years
-    </section>
+        <table> <!--designing table with rows and column-->
+          <thead>
+            <tr> <!--create the header of the table-->
+              <th>Company</th>
+              <th>Position</th>
+              <th>Years</th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ABC Corp</td>
+                <td>Backend Developer</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>Acme</td>
+                <td>Hardware Designer</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td> 123 INC</td>
+                <td>Construction worker</td>
+                <td>1</td>
+              </tr>
 
-    <section>
+            </tbody>
+            <tfoot> 
+              <tr>
+                <!--use colspan to move to the column you want to write on. Count is from 0,1,2,etc-->
+                <th colspan ="2">Total years</th><!--this will make it bolded and tab-->
+                <td>9</td>
+              </tr>
+            </tfoot>
+      
+        </table>
+        <ol>
+          <li>
+          <p>Backend Developer
+          ABC Corp
+          5 Years</p>
+          </li>
+           <li>
+            <p>Hardware Designer 
+              ACME
+              3 Years
+            </p>
+           </li>
+      
+           <li> 
+            <p>
+            Construction Worker
+            123 Inc
+            2 Years
+            </p>
+            </li>
+        </ol>
+       
+       </section>
+
+    <section id="Portfolio">
         <h2>Portfolio</h2>
     </section>
-    <section>
+
+    <section id="Testimonials">
         <h2>Testimonials</h2>
-        Cawaps courses gave me a change in my career.
-        Cawap courses helped me get a job.
+        <blockquote>
+          <p><em>Cawaps courses</em> gave me a change in my career.
+            Cawap courses helped me get a job.
+          </p>
+        </blockquote>
+       
+       
     </section>
    
-    <Section>
+    <Section id ="address">
+      
         <h2>Mailing Address</h2>
+        <address>
         999 Front st.
         Anywhere, ON M6L 2C8
+      </address>
     </Section>
+    <!--this is used to reference(link up) another document in the folder(indicated by ./). this will appear towards the end of the webpage when displayed-->
+    <a href="./contactme.html">Contact Me</a>
+  </main>
   </body>
 </html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+</head>
+<body>
+    <h1>Contact Iveatu</h1>
+    <section> <!--if you dont want your message to be sent to the browser, but on the payload of your document for security issues, use method POST-->
+    <form action="./server.html" method="post">
+        <!--use label to give the form textbox a name. the label name is the id on the input line of code-->
+        <label for="name1">Name</label>
+        <input type ="text" name="greet" id="name1" required><!--the required forces you to fill that texfield-->
+        <p>
+        <label for="myemail">Email</label>
+        <input type ="email" name ="email" id="myemail">
+        </p>
+        <fieldset> <!--this is used to draw a square around the radio button areas-->
+            <legend>Best time to call</legend>
+       
+        <p> <Label>
+        <input type="radio" name="time" value="morning">Morning
+        </Label>
+        </p>
+        <p> <Label>
+            <input type="radio" name="time" value="afternoon">Afternoon
+            </Label>
+            </p>
+        <p> <Label>
+            <input type="radio" name="time" value="evening">Evening
+            </Label>
+            </p>
+        </fieldset>
+
+        <p>
+            <label for="asap">ASAP</label>
+            <input type="checkbox" name="urgency" value="asap">
+        </p>
+        <p>
+            <label for="reason">Select reason type:</label>
+            <select id="reason" name="reason"><!--use select when you want to create dropdown list to select from-->
+                <option value="To check error in my code">Code</option>
+                <option value="To assist with technical issues">Technical</option>
+                <option value="To rebook appointment">Appointment</option>
+            </select>
+        </p>
+        <p>
+            <textarea placeholder ="Brief explanation"name="comment" id="" cols="30" rows="10"></textarea>
+            <p> <!--add button to your form-->
+                <button type ="submit">Send</button>
+            <!--this is the result on the browser of the server--http://127.0.0.1:5500/server.html?greet=Jane&email=juhu%40gmail.com-->
+        </p>
+        </form>
+    </section>
+    </body>
+    </html>
+    

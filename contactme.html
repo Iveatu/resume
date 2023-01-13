@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style2.css">
     <title>Contact Me</title>
 </head>
 <body>
+    <main>
     <h1>Contact Iveatu</h1>
     <section> <!--if you dont want your message to be sent to the browser, but on the payload of your document for security issues, use method POST-->
     <form action="./server.html" method="post">
         <!--use label to give the form textbox a name. the label name is the id on the input line of code-->
+        <p>
         <label for="name1">Name</label>
         <input type ="text" name="greet" id="name1" required><!--the required forces you to fill that texfield-->
+        </p>
         <p>
         <label for="myemail">Email</label>
         <input type ="email" name ="email" id="myemail">
         </p>
-        <fieldset> <!--this is used to draw a square around the radio button areas-->
+        <fieldset id="resume-fieldset"> <!--this is used to draw a square around the radio button areas-->
             <legend>Best time to call</legend>
        
         <p> <Label>
@@ -54,6 +59,11 @@
         </p>
         </form>
     </section>
+    <section>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut nobis, et eos aspernatur, officiis numquam ad consequuntur asperiores id inventore, rem dicta voluptatum dolor pariatur praesentium perspiciatis enim laudantium ab.   i am a very enthusiatic developer and willing to take up any coding challenge <br>
+        <aside><p>I am ready to resume this job as soon as I sign the offer letter</p></aside>
+    </section>
+    </main>
     </body>
     </html>
     

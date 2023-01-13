@@ -2,6 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js"></script>
+    <!-- commented the link ref below for style2.css because i was implementing @import in style.css page -->
+    <!-- <link rel="stylesheet" href="./style2.css"> -->
     <title>My Resume</title>
   </head>
 
@@ -18,7 +22,22 @@
 <a href="#Services">Services</a>
   </section>
 
-  <nav>
+  <!-- <nav>
+    <ul>
+      <li><a href="#name">Name</a></li>
+      <li><a href="#address">Mailing Address</a></li>
+      <li><a href="#history">Work History</a></li>
+      <li><a href="#About Me">About Me</a></li>
+      <li><a href="#Skills">Skills</a></li>
+      <li><a href="#Portfolio">Portfolio</a></li>
+      <li><a href="#Testimonials">Testimonials</a></li>
+      <li><a href="#Services">Services</a></li>
+
+     </ul>
+   </nav> -->
+   <!-- we want to apply display as inline for the nav element content. we go to css to style it -->
+
+   <nav>
     <ul>
       <li><a href="#name">Name</a></li>
       <li><a href="#address">Mailing Address</a></li>
@@ -32,15 +51,6 @@
      </ul>
    </nav>
 
-
-  <a href="#name">Name</a>
-  <a href="#address">Mailing Address</a>
-  <a href="#history">Work History</a>
-  <a href="#About Me">About Me</a>
-  <a href="#Skills">Skills</a>
-  <a href="#Portfolio">Portfolio</a>
-  <a href="#Testimonials">Testimonials</a>
-  <a href="#Services">Services</a>
 
   <main>
     <h1>Resume</h1>
@@ -63,20 +73,27 @@
         <header>
             <h2 id="About Me">About Me</h2>
         </header>
-      Hello! I'm Iveatu and i'm happy to have you as a student in this course.
+        <!-- add picture of me under the About me -->
+        <!-- <img src="./images/untitled57.png" alt="my picture"> -->
+        <!-- add class element to the img code above so it can be called with css -->
+        <img class="my-picture" src="./images/untitled57.png" alt="my picture">
+        <p></p>
+        Hello! I'm Iveatu and i'm happy to have you as a student in this course.
       <aside>
         <blockquote><small>"Whether you think you can or you think you cant, you are right"</small>
         </blockquote>
       </aside>
+      <footer><h5>Authored by Iveatu</h5></footer>
     </article>
-    <footer><h5>Authored by Iveatu</h5></footer>
+   
     
    <section id="Services"> 
+    
         <h2>Services</h2>
-        <ul><li>Web development</li></ul>
+        <ul><li><p>Web development</p></li></ul>
         <ul><li> App development</li></ul>
         <ul><li>Training</li></ul>
-  
+      </p>
     </section>
 
     <section id="Skills">
@@ -89,7 +106,7 @@
           </li>
         </ul>
         <ul>
-          <li>
+          <li lang="es">
             <p><strong>CSS:</strong> Layout your content visually for multiple device Javascript
             </p>
           </li>
@@ -166,7 +183,16 @@
 
     <section id="Portfolio">
         <h2>Portfolio</h2>
-    </section>
+        <!-- add seven images from picsum. https://picsum.photos/ or https://unsplash.com/  -->
+        <img src="https://picsum.photos/id/237/200/200" alt="Black dog">
+        <img src="https://picsum.photos/id/16/200/200" alt="Blue Ocean">
+        <img src="https://picsum.photos/id/29/200/200" alt="hot mountain">
+        <img src="https://picsum.photos/id/43/200/200" alt="Downtown night view">
+        <img src="https://picsum.photos/id/64/200/200" alt="Summer treat">
+        <img src="https://picsum.photos/id/75/200/200" alt="Blackberry">
+        <img src="https://picsum.photos/id/88/200/200" alt="City traffic">
+
+      </section>
 
     <section id="Testimonials">
         <h2>Testimonials</h2>
@@ -187,8 +213,20 @@
         Anywhere, ON M6L 2C8
       </address>
     </Section>
+    <br>
+    
     <!--this is used to reference(link up) another document in the folder(indicated by ./). this will appear towards the end of the webpage when displayed-->
-    <a href="./contactme.html">Contact Me</a>
-  </main>
+    <!-- <a href="./contactme.html">Contact Me</a> -->
+    <!-- let add a new line of code for the Css styling for contactme weblink. I will comment out the contactme code above and update it as another code below. this time i will add styleme button beside it -->
+    <a id="contact-me" href="./contactme.html">Contact Me</a>
+    <button id="style-me">Style Me</button>
+      <!-- i will go over to style.css to style the contact-me to reflect the box model(content,padding,border, margin) including other decoration likebackground color,etc) -->
+    
+    <p></p>
+    <br>
+
+    *
+    </main>
   </body>
+  <script src="./index.js"></script>
 </html>

@@ -1,0 +1,198 @@
+/* /* -the * is called the universal selector to select all element in the html file(DOM tree). Meanwhile, to add a comment, use ctrl+/
+/* for example, if you want to bolden all the text in the html resume file, see the below code */
+/** {
+font-weight: bold;
+/*}
+/* let us treat Attribute selector */
+
+/* [lang="en"] {
+    font-weight: bold;
+} */
+
+/* p{
+    font-weight:bold
+} */
+
+/* form > p{
+    background-color: aqua;
+} */
+
+/* p { 
+    background-color: aqua
+}*/
+
+/* section >p{
+    font-weight: bold;
+} */
+
+/* aside > p{
+    font-weight: bold;
+} */
+
+/* to illustrate next sibling combination, sibling and style from the next sibling. This will ignore the first sibling */
+/* option + option{  
+    font-weight: bold;
+}
+/*
+/*
+/* lets illutrate subsequent sibling combinator e.g h2~p .this element can be found in index.html */
+
+/* h2 ~ blockquote{
+    font-weight: bold;
+} */
+
+/* if we want to iterate throudh a list to style specifically the odd or even, we use an+b(where b=1 for odd) or an+b(where b=0 for even; or just use odd or even
+li:nth-child(even){
+    color: red;
+} */
+
+/* let do examples of dynamic pseudo code  */
+/* 
+a:link {
+    color:green
+}
+
+a:visited{
+    color:orange
+    
+}
+
+a:hover{
+    color:pink
+}
+
+h1::first-letter{
+    color:chartreuse 
+}
+*/
+/* you can use ::first-line to take care of the first line in h1  */
+/*  
+h2{ 
+    color:green 
+} */
+
+/* look for contact-me in the index.html file as the html for this css code below */
+/* because we had use 'id' at the contact me in the html, we can point to it with '#' sign as #contact-me */
+/* #contact-me{
+    width: 200px;
+    height: 200px;
+    border:1px solid red;
+    padding: 10px;
+    background-color: red;
+    color:white;
+    margin-bottom: 400px;
+    border-radius: 10px;
+} */
+
+/* i will try out the @import for actions like importing font externally and adding to your css stylesheet document. we will import the fonts(roboto) from google font online */
+/* first, you can tie html and css stylesheets together by using @import. first, let one stylesheet link ref be in the html document sytle.css. then in style.css, use import to tie the style2.css to the style.css file. */
+
+/* @import "./style2.css"; */
+
+/* next is to go to google font to import some font family and copy the url of imported font and bring it here as the second import */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,900&display=swap'); */
+
+/* h2{ 
+    
+    color:green 
+} */
+/*
+ *{ 
+    font-family: 'Roboto', sans-serif;
+}  */
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,900&display=swap'); */
+
+/* :root{
+    font-size: 16px;
+} */
+
+*{
+    font-size: 16px;
+    box-sizing: border-box;
+} 
+
+#Testimonials blockquote{
+    border: 2px solid black;
+    padding: 0.5rem;
+    /* if you have one value, it covers the four sides. if we have 2 values, the first value covers top and bottom while second value is left and right */
+}
+
+/* next select the main element */
+
+main{
+    /* max-width: 700px;
+    padding:0 2rem;
+    border-left: 2px;
+    border-right: 2px;
+    margin: 0 auto; */
+/* to make this code multilingual, we will update this code below */
+max-width: 700px;
+    padding:0 2rem;
+    border-left: 2px;
+    border-right: 2px;
+    margin: 0 auto; */
+
+
+}
+/* using the above will give your box more that max-width of 700px. to ensure that everything is 700px, use box-sizing: border-box */
+/* note, root does not work with box size. so we will use universal selector '*' */
+/* do inspect on testimonal and see the effect of box sizing where all the boxes considered it is 700 for everything. Without the box sizing, the content box will retain 700 */
+
+/* to move all the document from main to the center of the page, use margin 0 auto */
+
+/* to remove the fieldset border on the contactme.html document, add an id to the fieldset and call it from here with # as seen below*/
+
+#resume-fieldset{
+    /* border:none;
+    /* next lets take off more things like margin, padding */
+    /* margin: 0;
+    padding: 0; */ 
+
+ border-block: 0;
+ border: inline 0;
+    /* next lets take off more things like margin, padding */
+    margin-block: 0;
+    margin-inline: 0;
+    padding-block: 0;
+    padding-inline: 0;
+}
+
+#resume-fieldset legend{
+    /* padding: 0;} */
+
+     padding-block: 0;
+     padding-inline: 0;
+    } 
+
+    /* to apply the main styling to the body of contactme.html, include main element in the contactme document under body element and move all body content into the main element */
+
+    /* let us change the default display "inline" attribute of the form that has name and email in contactme.html to display "block"*/
+
+    form >p label{
+        /* or .label-standard{.. */
+        display:block;
+        margin-bottom: 0.5rem;
+    }
+    .my-picture {
+        max-width: 200px;
+        float: left;
+        margin-right: 20px;
+    }
+     article{
+        background-color: black;
+        color:white;
+        display:flow-root
+        
+        /* this display attribute of flow-root helps to wrap the text and picture appropriately */
+     }
+     /* for display inline, you can work with only margin left and right. Top and bottom may not work */
+     /* however, if you add a new item, it will assume the original size of the display, but if you use float, it will extend (wrap) to the new item */
+
+
+nav ul li{
+    display: inline;
+    margin: 0 0.5rem;
+    line-height: 1.5rem;
+}

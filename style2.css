@@ -1,0 +1,81 @@
+/*/* /* h1{
+    color:red
+} */
+
+/* h2{
+    color:red
+} */
+ /* h2{
+    color:red !important
+ }*/ 
+
+#container{
+    border:2px solid black
+}
+
+/* .child-div{
+    height: 100px;
+    width: 200px;
+}
+.one{ 
+    background-color: orange;
+}
+
+.two{ 
+    background-color: red;
+}
+
+.three{ 
+    background-color: pink;
+}
+
+.four{
+    background-color: green;
+}
+
+.five{ 
+    background-color: blue;
+}
+
+.six{ 
+    background-color: brown;
+} */
+
+/* let us move the boxes around */
+
+#container{
+    border:2px solid black
+}
+
+.child-div{
+    height: 100px;
+    width: 200px;
+}
+.one{ 
+    background-color: orange;
+    position: relative;
+    top: 500px;
+    left: 500px;
+}
+
+.two{ 
+    background-color: red;
+}
+
+.three{ 
+    background-color: pink;
+}
+
+.four{
+    background-color: green;
+    position: relative;
+    top: 500px;
+    left: 400px;
+}
+
+.five{ 
+    background-color: blue;
+}
+
+.six{ 
+    background-color: brown;}
